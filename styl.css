@@ -1,0 +1,100 @@
+
+body {
+    background-color: bisque;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Section Styles */
+section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#about .content, #contact .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#about .content img, #contact .content img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills ul li {
+    background: #f4f4f4;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+#projects .project {
+    margin: 5px 0;
+}
+
+#projects .project img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+a:hover, .project:hover {
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+#skills ul li:hover {
+    background: #007BFF;
+    color: #fff;
+    transition: background 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    #about .content, #contact .content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
